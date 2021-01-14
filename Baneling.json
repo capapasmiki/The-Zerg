@@ -1,0 +1,87 @@
+{
+	"monster": [
+		{
+			"name": "Baneling",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 3,
+			"wis": 14,
+			"cha": 6,
+			"skill": {
+				"perception": "4",
+				"stealth": "2"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"temorsense 30 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"acid"
+			],
+			"trait": [
+				{
+					"name": "Languages—",
+					"entries": [
+						"Challenge 3 (700 XP)"
+					]
+				},
+				{
+					"name": "Burrow",
+					"entries": [
+						"By spending 1 minute digging, the baneling can burrow through solid rock up to 5 feet below the surface, leaving no trace above, and completely submerging itself. While burrowed, the baneling has total cover, can't move, and can't take actions other than to suicide, or to unburrow as a bonus action. If the baneling takes 10 or more damage while burrowed, it must make a Constitution saving throw with a DC equal to 5 + the damage taken, or be forced to unburrow as a reaction."
+					]
+				},
+				{
+					"name": "Death Throes",
+					"entries": [
+						"When the baneling dies, it explodes, and each creature within 15 feet of it must make a {@dc 13} Dexterity saving throw, taking 21 ({@damage 6d6}) acid damage on a failed save, or half as much damage on a successful one. The explosion leaves behind a pool of acid with a radius of 5 feet, centered on the baneling. This area is difficult terrain, a creature that ends its turn in the pool of acid take 7 ({@damage 2d6}) acid damage. The pool of acid dilutes and vanishes after 1 round."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Suicide",
+					"entries": [
+						"The baneling dies."
+					]
+				}
+			],
+			"traitTags": [
+				"Death Burst"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"AOE"
+			]
+		}
+	]
+}
