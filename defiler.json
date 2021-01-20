@@ -1,0 +1,133 @@
+{
+	"monster": [
+		{
+			"name": "Defiler",
+			"source": "",
+			"page": 0,
+			"size": "L",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d10 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 13,
+			"con": 15,
+			"int": 5,
+			"wis": 19,
+			"cha": 6,
+			"save": {
+				"dex": "+5",
+				"con": "+5",
+				"wis": "+8",
+				"cha": "+2"
+			},
+			"skill": {
+				"perception": "8"
+			},
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 18,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"telepathy 60 ft."
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Defiler's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell blindness/deafness}",
+						"{@spell enlarge/reduce}",
+						"{@spell faerie fire}",
+						"{@spell fog cloud}",
+						"{@spell thunderwave}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell confusion}",
+							"{@spell counterspell}",
+							"{@spell crown of madness}",
+							"{@spell Evard's black tentacles}",
+							"{@spell fireball}",
+							"{@spell hold person}",
+							"{@spell hypnotic pattern}",
+							"{@spell slow}"
+						],
+						"1e": [
+							"{@spell cone of cold}",
+							"{@spell dominate person}",
+							"{@spell eyebite}",
+							"{@spell insect plague}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Viper Strain",
+					"entries": [
+						"A lithe, serpent like creature, the viper slithers through the air like a snake through grass. Concealed in its mouth is an extremely long and strong tongue which it uses to snatch prey from the ground and into its mouth."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Abduct {@recharge 5}",
+					"entries": [
+						"The viper targets one creature of size large or smaller within 90 feet of itself. That creature must succeed on a {@dc 15} Strength saving throw or be pulled up to 90 feet straight towards the viper. If the creature reaches the vipers jaws it suffers 32 ({@damage 5d12}) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"restrained",
+				"unconscious"
+			]
+		}
+	]
+}
