@@ -1,0 +1,532 @@
+{
+	"name": "Defiler",
+	"source": "",
+	"page": 0,
+	"size": "L",
+	"type": {
+		"type": "monstrosity",
+		"tags": [
+			"zerg"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		17
+	],
+	"hp": {
+		"average": 135,
+		"formula": "18d10 + 36"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 13,
+	"con": 15,
+	"int": 5,
+	"wis": 19,
+	"cha": 6,
+	"save": {
+		"dex": "+5",
+		"con": "+5",
+		"wis": "+8",
+		"cha": "+2"
+	},
+	"skill": {
+		"perception": "8"
+	},
+	"senses": [
+		"darkvision 90 ft."
+	],
+	"passive": 18,
+	"immune": [
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"frightened",
+		"paralyzed",
+		"poisoned"
+	],
+	"languages": [
+		"telepathy 60 ft."
+	],
+	"cr": "6",
+	"spellcasting": [
+		{
+			"name": "Innate Spellcasting",
+			"headerEntries": [
+				"The Defiler's innate spellcasting ability is Wisdom (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
+			],
+			"will": [
+				"{@spell blindness/deafness}",
+				"{@spell enlarge/reduce}",
+				"{@spell faerie fire}",
+				"{@spell fog cloud}",
+				"{@spell thunderwave}"
+			],
+			"daily": {
+				"3e": [
+					"{@spell cloud kill}",
+					"{@spell confusion}",
+					"{@spell counterspell}",
+					"{@spell crown of madness}",
+					"{@spell Evard's black tentacles}",
+					"{@spell fireball}",
+					"{@spell hold person}",
+					"{@spell hypnotic pattern}",
+					"{@spell slow}"
+				],
+				"1e": [
+					"{@spell cone of cold}",
+					"{@spell dominate person}",
+					"{@spell eyebite}",
+					"{@spell insect plague}"
+				]
+			},
+			"ability": "wis"
+		}
+	],
+	"trait": [
+		{
+			"name": "Viper Strain",
+			"entries": [
+				"A lithe, serpent like creature, the viper slithers through the air like a snake through grass. Concealed in its mouth is an extremely long and strong tongue which it uses to snatch prey from the ground and into its mouth."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Abduct {@recharge 5}",
+			"entries": [
+				"The viper targets one creature of size large or smaller within 90 feet of itself. That creature must succeed on a {@dc 15} Strength saving throw or be pulled up to 90 feet straight towards the viper. If the creature reaches the vipers jaws it suffers 32 ({@damage 5d12}) piercing damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"languageTags": [
+		"TP"
+	],
+	"damageTags": [
+		"P"
+	],
+	"spellcastingTags": [
+		"I"
+	],
+	"conditionInflictSpell": [
+		"blinded",
+		"charmed",
+		"deafened",
+		"frightened",
+		"incapacitated",
+		"paralyzed",
+		"restrained",
+		"unconscious"
+	]
+}
+,
+{
+	"name": "Hydralisk",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "monstrosity",
+		"tags": [
+			"zerg"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 91,
+		"formula": "14d8 + 28"
+	},
+	"speed": {
+		"walk": 35
+	},
+	"str": 15,
+	"dex": 20,
+	"con": 14,
+	"int": 3,
+	"wis": 15,
+	"cha": 6,
+	"skill": {
+		"perception": "+4",
+		"stealth": "+6"
+	},
+	"senses": [
+		"darkvision 60 ft.",
+		"temorsense 30 ft."
+	],
+	"passive": 14,
+	"cr": "3",
+	"trait": [
+		{
+			"name": "Ambusher",
+			"entries": [
+				"The zergling has advantage on attack rolls against any creature it has surprised."
+			]
+		},
+		{
+			"name": "Burrow",
+			"entries": [
+				"By spending 1 minute digging, the hydralisk can burrow through solid rock up to 5 feet below the surface, leaving no trace above, and completely submerging itself. While burrowed, the hydralisk has total cover, can't move, and can't take actions other than to unburrow as a bonus action. If the hydralisk takes 10 or more damage while burrowed, it must make a Constitution saving throw with a DC equal to 5 + the damage taken, or be forced to unburrow as a reaction."
+			]
+		},
+		{
+			"name": "Poison Strikes",
+			"entries": [
+				"If the hydralisk hits a creature with either its needle spines or its claws, that creature must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. At the end of each of its turns, a creature can make a Constitution saving throw, ending the effects on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hydralisks' Poison Strikes for the next 24 hours."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The hydralisk makes two needle spines attacks."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. Hit 10 ({@damage 2d6 + 3}) slashing damage."
+			]
+		},
+		{
+			"name": "Needle Spines",
+			"entries": [
+				"{@atk rw} {@hit 7} to hit, range 100/400 ft., one target. Hit 11 ({@damage 1d12 + 5}) piercing damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Ambusher"
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW",
+		"RW"
+	],
+	"conditionInflict": [
+		"poisoned"
+	]
+}
+,
+{
+	"name": "Ultralisk",
+	"source": "",
+	"page": 0,
+	"size": "G",
+	"type": {
+		"type": "monstrosity",
+		"tags": [
+			"zerg"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 19,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 407,
+		"formula": "22d20 + 176"
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 27,
+	"dex": 12,
+	"con": 27,
+	"int": 8,
+	"wis": 15,
+	"cha": 6,
+	"save": {
+		"dex": "+8",
+		"con": "+15",
+		"wis": "+9"
+	},
+	"skill": {
+		"perception": "9"
+	},
+	"senses": [
+		"darkvision 90 ft."
+	],
+	"passive": 19,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from non-magical weapons",
+			"cond": true
+		}
+	],
+	"immune": [
+		"poison",
+		"psychic"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened",
+		"paralyzed",
+		"poisoned"
+	],
+	"cr": "21",
+	"trait": [
+		{
+			"name": "Cleave",
+			"entries": [
+				"When the ultralisk rolls to attack a creature, it also rolls to against all creatures within 5 ft. of the target other than the ultralisk."
+			]
+		},
+		{
+			"name": "Siege Monster",
+			"entries": [
+				"The ultralisk deals double damage to objects and structures."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The ultralisk makes two attacks with its kaiser blades. It can use its gore or crush attack instead of its kaiser blades."
+			]
+		},
+		{
+			"name": "Gore",
+			"entries": [
+				"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. Hit 21 ({@damage 2d12 + 8}) piercing damage. If the target is a large or smaller creature it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone} by the ultralisk."
+			]
+		},
+		{
+			"name": "Kaiser Blades",
+			"entries": [
+				"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. Hit 27 ({@damage 3d12 + 8}) slashing damage."
+			]
+		},
+		{
+			"name": "Stomp",
+			"entries": [
+				"{@atk mw} {@hit 15} to hit, reach 10 ft., one {@condition prone} creature. Hit 40 ({@damage 5d12 + 8}) bludgeoning damage. The target must succeed on a {@dc 20} Strength saving throw or be {@condition restrained}. A creature can repeat this saving throw at the start of each of its turns. While the target is {@condition restrained}, the ultralisk is {@condition grappled}. (This attack does not gain the benefit of cleave.)"
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Attack",
+			"entries": [
+				"The ultralisk makes one gore or kaiser blades attack."
+			]
+		},
+		{
+			"name": "Crush (Costs 2 Actions)",
+			"entries": [
+				"The ultralisk makes a stomp attack on a {@condition restrained} creature."
+			]
+		}
+	],
+	"traitTags": [
+		"Siege Monster"
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"B",
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"conditionInflict": [
+		"prone",
+		"restrained"
+	]
+}
+,
+{
+	"name": "Roach",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "monstrosity",
+		"tags": [
+			"zerg"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 104,
+		"formula": "11d8 + 55"
+	},
+	"speed": {
+		"walk": 30,
+		"burrow": 30
+	},
+	"str": 12,
+	"dex": 16,
+	"con": 20,
+	"int": 3,
+	"wis": 13,
+	"cha": 6,
+	"skill": {
+		"perception": "+3",
+		"stealth": "+5"
+	},
+	"senses": [
+		"darkvision 60 ft.",
+		"temorsense 30 ft."
+	],
+	"passive": 13,
+	"cr": "3",
+	"trait": [
+		{
+			"name": "Adaptive Plating",
+			"entries": [
+				"When the roach has less than half its hit points its AC becomes 16 for 1 minute. After the roach has benefited from adaptive plating, it can't do so again after it has finished a long rest."
+			]
+		},
+		{
+			"name": "Regeneration",
+			"entries": [
+				"The roach regains 5 hit points at the start of its turn if it has at least 1 hit point and has not been damaged since the end of its last turn."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Acidic Saliva",
+			"entries": [
+				"{@atk rw} {@hit 5} to hit, range 30/90 ft., one target. Hit 23 ({@damage 4d10 + 3}) acid damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Regeneration"
+	],
+	"senseTags": [
+		"D"
+	],
+	"damageTags": [
+		"A"
+	],
+	"miscTags": [
+		"RW"
+	]
+}
+,
+{
+	"name": "Mutalisk",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "monstrosity",
+		"tags": [
+			"zerg"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 82,
+		"formula": "15d8 + 15"
+	},
+	"speed": {
+		"walk": 0,
+		"fly": {
+			"number": 45,
+			"condition": "(hover)"
+		},
+		"canHover": true
+	},
+	"str": 13,
+	"dex": 18,
+	"con": 13,
+	"int": 3,
+	"wis": 15,
+	"cha": 6,
+	"skill": {
+		"perception": "+4",
+		"stealth": "+6"
+	},
+	"senses": [
+		"darkvision 90 ft."
+	],
+	"passive": 14,
+	"cr": "2",
+	"trait": [
+		{
+			"name": "Regeneration",
+			"entries": [
+				"The mutalisk regains 5 hit points at the start of its turn if it has at least 1 hit point and has not been damaged since the end of its last turn."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Glaive Wurm",
+			"entries": [
+				"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. Hit 8 ({@damage 1d8 + 4}) slashing damage. When the glaive wurm hits a creature, it can bounce to another creature within 10 feet of the initial target, and then again to another creature within 10 feet of the second target. A separate attack roll is made for each target. If there are multiple creatures that the glaive wurm could bounce to, the mutalisk chooses which target the glaive wurm bounces to."
+			]
+		}
+	],
+	"traitTags": [
+		"Regeneration"
+	],
+	"senseTags": [
+		"D"
+	],
+	"damageTags": [
+		"S"
+	],
+	"miscTags": [
+		"RW"
+	]
+}
+,
