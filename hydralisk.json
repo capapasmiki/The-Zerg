@@ -1,0 +1,105 @@
+{
+	"monster": [
+		{
+			"name": "Hydralisk",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 91,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 15,
+			"dex": 20,
+			"con": 14,
+			"int": 3,
+			"wis": 15,
+			"cha": 6,
+			"skill": {
+				"perception": "4",
+				"stealth": "6"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"temorsense 30 ft."
+			],
+			"passive": 14,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The zergling has advantage on attack rolls against any creature it has surprised."
+					]
+				},
+				{
+					"name": "Burrow",
+					"entries": [
+						"By spending 1 minute digging, the hydralisk can burrow through solid rock up to 5 feet below the surface, leaving no trace above, and completely submerging itself. While burrowed, the hydralisk has total cover, can't move, and can't take actions other than to unburrow as a bonus action. If the hydralisk takes 10 or more damage while burrowed, it must make a Constitution saving throw with a DC equal to 5 + the damage taken, or be forced to unburrow as a reaction."
+					]
+				},
+				{
+					"name": "Poison Strikes",
+					"entries": [
+						"If the hydralisk hits a creature with either its needle spines or its claws, that creature must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 1 minute. At the end of each of its turns, a creature can make a Constitution saving throw, ending the effects on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hydralisks' Poison Strikes for the next 24 hours."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hydralisk makes two needle spines attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. Hit 10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Needle Spines",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 100/400 ft., one target. Hit 11 ({@damage 1d12 + 5}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Ambusher"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		}
+	]
+}

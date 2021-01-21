@@ -1,0 +1,151 @@
+{
+	"monster": [
+		{
+			"name": "Ultralisk",
+			"source": "",
+			"page": 0,
+			"size": "G",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 407,
+				"formula": "22d20 + 176"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 27,
+			"int": 8,
+			"wis": 15,
+			"cha": 6,
+			"save": {
+				"dex": "+8",
+				"con": "+15",
+				"wis": "+9"
+			},
+			"skill": {
+				"perception": "9"
+			},
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 19,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"name": "Cleave",
+					"entries": [
+						"When the ultralisk rolls to attack a creature, it also rolls to against all creatures within 5 ft. of the target other than the ultralisk."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The ultralisk deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ultralisk makes two attacks with its kaiser blades. It can use its gore or crush attack instead of its kaiser blades."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. Hit 21 ({@damage 2d12 + 8}) piercing damage. If the target is a large or smaller creature it must succeed on a {@dc 20} Strength saving throw or be knocked {@condition prone} by the ultralisk."
+					]
+				},
+				{
+					"name": "Kaiser Blades",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. Hit 27 ({@damage 3d12 + 8}) slashing damage."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one {@condition prone} creature. Hit 40 ({@damage 5d12 + 8}) bludgeoning damage. The target must succeed on a {@dc 20} Strength saving throw or be {@condition restrained}. A creature can repeat this saving throw at the start of each of its turns. While the target is {@condition restrained}, the ultralisk is {@condition grappled}. (This attack does not gain the benefit of cleave.)"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The ultralisk makes one gore or kaiser blades attack."
+					]
+				},
+				{
+					"name": "Crush (Costs 2 Actions)",
+					"entries": [
+						"The ultralisk makes a stomp attack on a {@condition restrained} creature."
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			]
+		}
+	]
+}

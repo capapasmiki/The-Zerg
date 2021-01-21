@@ -1,0 +1,82 @@
+{
+	"monster": [
+		{
+			"name": "Guardian",
+			"source": "",
+			"page": 0,
+			"size": "H",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 142,
+				"formula": "15d12 + 45"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 16,
+			"int": 3,
+			"wis": 16,
+			"cha": 6,
+			"senses": [
+				"darksight 90 ft."
+			],
+			"passive": 15,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Far Sighted Artillery",
+					"entries": [
+						"It is hard for the guardian to aim at creatures that are close to it. The guardian has disadvantage on attacks against creatures within 40 feet of it."
+					]
+				},
+				{
+					"name": "Low Flying",
+					"entries": [
+						"The guardian doesn't have the ability to hover more than 40 feet in the air."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The guardian deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Acid Spores",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 300/1200 ft., one target. Hit 35 ({@damage 5d12 + 3}) acid damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"RW"
+			]
+		}
+	]
+}

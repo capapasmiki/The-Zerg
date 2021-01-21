@@ -1,0 +1,77 @@
+{
+	"monster": [
+		{
+			"name": "Mutalisk",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 82,
+				"formula": "15d8 + 15"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 45,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 13,
+			"int": 3,
+			"wis": 15,
+			"cha": 6,
+			"skill": {
+				"perception": "4",
+				"stealth": "6"
+			},
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 14,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The mutalisk regains 5 hit points at the start of its turn if it has at least 1 hit point and has not been damaged since the end of its last turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Glaive Wurm",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. Hit 8 ({@damage 1d8 + 4}) slashing damage. When the glaive wurm hits a creature, it can bounce to another creature within 10 feet of the initial target, and then again to another creature within 10 feet of the second target. A separate attack roll is made for each target. If there are multiple creatures that the glaive wurm could bounce to, the mutalisk chooses which target the glaive wurm bounces to."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"RW"
+			]
+		}
+	]
+}

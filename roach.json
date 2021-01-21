@@ -1,0 +1,80 @@
+{
+	"monster": [
+		{
+			"name": "Roach",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"zerg"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 104,
+				"formula": "11d8 + 55"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 20,
+			"int": 3,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "3",
+				"stealth": "5"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"temorsense 30 ft."
+			],
+			"passive": 13,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Adaptive Plating",
+					"entries": [
+						"When the roach has less than half its hit points its AC becomes 16 for 1 minute. After the roach has benefited from adaptive plating, it can't do so again after it has finished a long rest."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The roach regains 5 hit points at the start of its turn if it has at least 1 hit point and has not been damaged since the end of its last turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Acidic Saliva",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/90 ft., one target. Hit 23 ({@damage 4d10 + 3}) acid damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"RW"
+			]
+		}
+	]
+}
