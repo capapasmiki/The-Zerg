@@ -1,4 +1,96 @@
 {
+	"name": "Zergling",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "monstrosity",
+		"tags": [
+			"zerg"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 33,
+		"formula": "6d8 + 5"
+	},
+	"speed": {
+		"walk": 50
+	},
+	"str": 13,
+	"dex": 16,
+	"con": 13,
+	"int": 3,
+	"wis": 13,
+	"cha": 6,
+	"skill": {
+		"perception": "3",
+		"stealth": "5"
+	},
+	"senses": [
+		"darkvision 60 ft.",
+		"temorsense 30 ft."
+	],
+	"passive": 13,
+	"cr": "1/2",
+	"trait": [
+		{
+			"name": "Ambusher",
+			"entries": [
+				"The zergling has advantage on attack rolls against any creature it has surprised."
+			]
+		},
+		{
+			"name": "Burrow",
+			"entries": [
+				"By spending 1 minute digging, the zergling can burrow through solid rock up to 5 feet below the surface, leaving no trace above, and completely submerging itself. While burrowed, the zergling has total cover, can't move, and can't take actions other than to unburrow as a bonus action. If the zergling takes 10 or more damage while burrowed, it must make a Constitution saving throw with a DC equal to 5 + the damage taken, or be forced to unburrow as a reaction."
+			]
+		},
+		{
+			"name": "Pack Tactics",
+			"entries": [
+				"The zergling has advantage on an attack roll against a creature if at least one of the zergling's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The zergling makes two claw attacks."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. Hit 5 ({@damage 1d4 + 3}) slashing damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Ambusher",
+		"Pack Tactics"
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"S"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
 	"monster": [
 		{
 			"name": "Ultralisk",
